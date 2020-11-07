@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/boder_sheet"
+    style="@style/AppBottomSheetDialogTheme"
+    android:orientation="vertical">
+    <View
+        android:layout_width="70dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/tvNewItem_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SỬA PHÂN LOẠI"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="#00BCD4" />
+
+        <EditText
+            android:id="@+id/edt_tenLoai_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:hint="Item name"
+            android:drawableLeft="@drawable/ic_ten_loai"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="30dp"
+            android:textColorHint="#00BCD4"
+            android:layout_marginEnd="30dp"
+            android:textColor="#00BCD4" />
+
+    <Spinner
+        android:id="@+id/sp_phanLoai_edit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:hint="Spinner"
+        android:spinnerMode="dialog"
+        android:textColor="#00BCD4"
+        android:textColorHint="#00BCD4" />
+
+    <Button
+        android:id="@+id/btn_Edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EDIT"
+        android:textColor="#ffffff"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="#03A9F4"
+        android:layout_marginBottom="10dp" />
+
+
+
+</LinearLayout>

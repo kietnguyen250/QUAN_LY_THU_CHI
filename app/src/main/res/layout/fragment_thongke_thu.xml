@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#e1e1d0"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:id="@+id/datepk"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_gravity="center"
+    >
+    <Button
+        android:id="@+id/btn_date1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Date 1"
+        android:textColor="#fff"
+        android:background="@drawable/btn_custom2"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:drawableLeft="@drawable/ic_calendar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"/>
+    <Button
+        android:id="@+id/btn_date2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Date 2"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:drawableLeft="@drawable/ic_calendar"
+        android:textColor="#fff"
+        android:background="@drawable/btn_custom2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"/>
+</RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_tk_thu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/datepk"
+        android:layout_marginTop="10dp"
+        android:layout_above="@id/tv_total"/>
+
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        android:textColor="#ff0000"
+        android:text="Tổng tiền"
+        android:gravity="center"
+        android:paddingLeft="4dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
